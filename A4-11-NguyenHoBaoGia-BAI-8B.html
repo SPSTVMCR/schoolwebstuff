@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BAI 8B</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <style>
+    .animation {
+      animation: fadeIn 1s ease-in-out;
+    }
+    .in-ltr-anim{
+        animation: in-ltr 1s ease-in-out;
+    }
+    .in-rtl-anim{
+        animation: in-rtl 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes in-ltr {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes in-rtl {
+      0% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+  </style>
+  <body>
+    <h1 class="animation">BÀI VẬN DỤNG</h1>
+    <h2 class="in-ltr-anim">
+      0<sup>0<sup>0<sup>0<sup>0</sup>0</sup>0</sup>0</sup>00<sup>0<sup>0<sup>0<sup>0</sup>0</sup>0</sup>0</sup>00<sup>0<sup>0<sup>0<sup>0</sup>0</sup>0</sup>0</sup>0
+    </h2>
+    <hr />
+    <h1 class="animation">NHIỆM VỤ TRANG 50</h1>
+    <h2>Biện luận số nghiệm phương trình bậc 2</h2>
+    <h2><span style="color: red">Bài toán:</span> Xác định số nghiệm của phương trình ax<sup>2</sup> + bx + c = 0</h2>
+    <br />
+    <p class="in-ltr-anim">
+      <b>B<sub>1</sub></b
+      >: Xác định hệ số a, b, c của phương trình bậc hai: ax<sup>2</sup> + bx + c = 0 (a ≠ 0)
+    </p>
+    <p class="in-rtl-anim">
+      <b>B<sub>2</sub></b
+      >: Tính <b>delta</b> = b<sup>2</sup> - 4ac
+    </p>
+    <p class="in-ltr-anim">
+      <b>B<sub>3</sub></b
+      >: Kết luận:
+    </p>
+    <p>
+      <ul class="in-ltr-anim">
+        <li>Nếu <b>delta</b> < 0: phương trình <i>vô nghiệm</i></li>
+        <li>Nếu <b>delta</b> = 0: phương trình <i>có nghiệm duy nhất</i></li>
+        <li>Nếu <b>delta</b> > 0: phương trình <i>có 2 nghiệm phân biệt</i></li>
+      </ul>
+    </p>
+    </body>
+</html>
